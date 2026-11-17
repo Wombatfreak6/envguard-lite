@@ -1,0 +1,52 @@
+{
+  "name": "envguard-lite",
+  "version": "1.0.0",
+  "description": "Lightweight, zero-dependency validation and type conversion for environment variables at application startup.",
+  "keywords": [
+    "env",
+    "environment",
+    "environment-variables",
+    "config",
+    "configuration",
+    "validation",
+    "validator",
+    "dotenv",
+    "node"
+  ],
+  "license": "MIT",
+  "author": "Abhyuday Singh Dhapola",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "example": "node examples/basic.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wombatfreak6/envguard-lite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wombatfreak6/envguard-lite/issues"
+  },
+  "homepage": "https://github.com/Wombatfreak6/envguard-lite#readme"
+}
